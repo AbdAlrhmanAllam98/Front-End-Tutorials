@@ -48,3 +48,25 @@ tabs.forEach((tab)=> {
     });
 });
 //END Create TABS
+// Start Create Our Works
+let switchers=document.querySelectorAll(".works ul li");
+let images=Array.from(document.images);
+switchers.forEach(li => {
+    li.addEventListener("click",toggleActive);
+    li.addEventListener("click",manageImages);
+});
+function toggleActive(){
+    switchers.forEach(li => {
+        li.classList.remove("active");
+        this.classList.add("active");
+    });
+}
+function manageImages(){
+    images.forEach((img)=>{
+        img.style.display='none';
+        document.querySelectorAll(`.gallery .${this.getAttribute('data-switch')}`).forEach((show)=>{
+            show.style.display='block';
+        });
+    });
+}
+// End Create Our Works

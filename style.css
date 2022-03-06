@@ -375,3 +375,26 @@ form .count-char .count.zero{
     display: none;
 }
 /* End Create TABS */
+/* Start Create OUR Works */
+.works ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.works ul li{
+    padding: 15px;
+    margin-right: 5px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+}
+.works ul li.active{
+    background-color: #009688;
+}
+.works .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+/* End Create OUR Works */
