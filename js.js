@@ -153,5 +153,9 @@ function checkButton(position){
         nextButton.classList.add("disabled");
         prevButton.classList.remove("disabled");
     }
+    else{
+        nextButton.classList.remove("disabled");
+        prevButton.classList.remove("disabled");
+    }
 }
 // END SLIDER WITH NEXT,PREVIOUS AND PAGINATION 
