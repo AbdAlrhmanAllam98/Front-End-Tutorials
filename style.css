@@ -95,7 +95,7 @@ body{
     transition: 0.6s;
 }
 .product:hover h3::before{
-    width: 70%;
+    width: 100%;
 }
 .product p{
     line-height: 1.8;
@@ -398,3 +398,78 @@ form .count-char .count.zero{
     gap: 10px;
 }
 /* End Create OUR Works */
+/* START SLIDER WITH NEXT,PREVIOUS AND PAGINATION*/
+.slider .slider-container{
+    width: 800px;
+    height: 300px;
+    margin: 20px auto;
+    position: relative;
+}
+.slider .slider-number{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 20px;
+    z-index: 2;
+}
+.slider-container .slider-images img{
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.slider-container .slider-images img.active{
+    opacity: 1;
+}
+.slider-control{
+    width: 800px;
+    margin:  auto;
+    overflow: hidden;
+    text-align: center;
+}
+.slider-control span:not(:nth-child(2)){
+    width: 15%;
+    background-color: #009688;
+    color: white;
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 16px;
+    user-select: none;
+    cursor: pointer;
+}
+.slider-control span:not(:nth-child(2)).disabled{
+    background-color: rgba(00, 96, 88, 0.3);
+    cursor: no-drop;
+}
+.slider-control .prev{
+    float: left;
+}
+.slider-control .pagination{
+    display: inline-block;
+    width: 70%;
+}
+.slider-control ul{
+    list-style: none;
+}
+.slider-control li{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    line-height: 30px;
+    background-color: rgba(00, 96, 88, 0.3);
+    padding: 2px 3px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.slider-control li.active{
+    background-color: #009688;
+}
+.slider-control .next{
+    float: right;
+}
+/* END SLIDER WITH NEXT,PREVIOUS AND PAGINATION*/
